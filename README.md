@@ -48,6 +48,19 @@ client/your-extensions/widgets/stl-export/src/
         └── preview3d.ts          # dependency-free WebGL preview renderer
 ```
 
+The full widget source is mirrored in this repository under
+[`src/`](src/):
+
+| File | Size | Description |
+|---|---|---|
+| [`src/config.ts`](src/config.ts) | 11.6 KB | Config model & defaults (terrain, labels, admin levels, disaster classes, margins, layout) |
+| [`src/runtime/widget.tsx`](src/runtime/widget.tsx) | 89.9 KB | 5-step wizard UI, AOI drawing, `runExport` orchestration, preview |
+| [`src/runtime/lib/exportScene.ts`](src/runtime/lib/exportScene.ts) | 137.9 KB | Main algorithm: terrain, clipping, dash-dot walls, Braille, raster bands, STL mesh assembly |
+| [`src/runtime/lib/writeStl.ts`](src/runtime/lib/writeStl.ts) | 3.4 KB | Binary STL serialization + browser download |
+| [`src/runtime/lib/preview3d.ts`](src/runtime/lib/preview3d.ts) | 14 KB | Dependency-free WebGL preview renderer (WebGL2/1) |
+| [`src/setting.tsx`](src/setting.tsx) | 35.9 KB | Widget settings panel (mirrors the config model) |
+| [`src/manifest.json`](src/manifest.json) | 1.6 KB | Widget manifest (name, platform, dependencies) for Experience Builder |
+
 ## Architecture & data flow
 
 ```
