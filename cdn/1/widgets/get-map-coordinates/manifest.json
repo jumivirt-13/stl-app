@@ -1,0 +1,22 @@
+{
+  "name": "get-map-coordinates",
+  "label": "Get Map Coordinates",
+  "type": "widget",
+  "version": "1.21.0",
+  "exbVersion": "1.21.0",
+  "author": "Your Name",
+  "description": "Display the latitude, longitude, scale, and zoom level of the map cursor location in a custom widget.",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "dependency": [
+    "jimu-arcgis"
+  ],
+  "properties": {},
+  "translatedLocales": [
+    "en"
+  ],
+  "defaultSize": {
+    "width": 800,
+    "height": 500
+  }
+}

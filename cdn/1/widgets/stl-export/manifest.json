@@ -1,0 +1,22 @@
+{
+  "name": "stl-export",
+  "label": "STL Export",
+  "type": "widget",
+  "version": "1.21.0",
+  "exbVersion": "1.21.0",
+  "author": "Your Name",
+  "description": "Export 3D scene content (terrain and scene layers) within a drawn rectangle to a 3D-printable STL file.",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "dependency": [
+    "jimu-arcgis"
+  ],
+  "properties": {},
+  "translatedLocales": [
+    "en"
+  ],
+  "defaultSize": {
+    "width": 400,
+    "height": 300
+  }
+}
